@@ -380,7 +380,7 @@ input[type=checkbox]{
   .menu { 
     display:none;
     position: absolute;
-    background-color: #018b8b;
+    background: linear-gradient(70deg, #2f4f4f, #018b8b);
     top: 120px;
     right: 0;
     left: 0;
