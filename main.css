@@ -125,7 +125,7 @@ li {
 .social-bar {
   position: fixed;
   right: 0;
-  top: 45%;
+  top: 50%;
   font-size: 15px;
   display: flex;
   flex-direction: column;
