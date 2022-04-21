@@ -125,7 +125,7 @@ li {
 .social-bar {
   position: fixed;
   right: 0;
-  top: 30%;
+  top: 45%;
   font-size: 15px;
   display: flex;
   flex-direction: column;
@@ -134,11 +134,15 @@ li {
 }
 
 .icon {
-  color:#ffffff;
+  color: #ffffff;
   text-decoration: none;
   padding: 8px;
   display: flex;
   transition: all .5s;
+}
+
+.icon-facebook {
+  background: #2E406E;
 }
 
 .icon-instagram {
@@ -165,7 +169,7 @@ li {
   border-radius: 0 0 0 1rem;
 }
 
-.icon :hover {
+.icon:hover {
   padding-right: 3rem;
   border-radius: 1rem 0 0 1rem;
   box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
@@ -387,7 +391,7 @@ input[type=checkbox]{
  } 
 
  /*HAMBURGER MENU*/
- .hamburger {
+.hamburger {
   display: none;
   font-size: 24px;
   user-select: none;
@@ -395,23 +399,34 @@ input[type=checkbox]{
 
  /* MEDIA QUERIES */ 
 
- @media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 
-  h1 {
-    color: #03989E;
-    font-style: bold;
-    font-size: 20px;
-    font-weight: bold;
-    margin-top: 130px;
-  }
+.social-bar {
+  top: 35%;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
 
-  .principal {
-    grid-area: principal;
+.icon {
+  padding: 5px;
+}
+
+h1 {
+  color: #03989E;
+  font-style: bold;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 130px;
+}
+
+.principal {
+  grid-area: principal;
     
-    
-    margin-right: 10px;
-    margin-left: 10px;
-    }
+  margin-right: 10px;
+  margin-left: 10px;
+}
 
   .infoBar {
     padding-right: 20px;
@@ -604,6 +619,14 @@ input[type=checkbox]{
 }
 
 @media (max-width: 1024px) {
+  .social-bar {
+    top: 72%;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
   .texto-institucional {
     display: flex;
     flex-direction: column;
@@ -632,4 +655,26 @@ input[type=checkbox]{
       margin-left: 0;
       margin-right: 0;
     }
+}
+
+@media (max-width: 375px) {
+
+  .social-bar {
+    top: 44%;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+@media (max-width: 320px) {
+
+  .social-bar {
+    top: 37%;
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
 }
