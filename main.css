@@ -33,6 +33,9 @@ header {
 
 .logo {
   grid-area: logo; 
+
+  padding-top: 1px;
+  padding-left: 20px;
 }
 
 a {
@@ -72,7 +75,7 @@ li {
  }
 
  .menu li {
-  padding: 5px 20px;
+  padding: 5px 15px;
  }
 
  /* MENU DESPLEGABLE */
@@ -146,7 +149,7 @@ h1 {
 }     
 
 .info-encabezado span {
-  color: #99177d;
+  color: #2f4f4f;
   font-weight: bold;
 }
 
