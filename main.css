@@ -297,8 +297,22 @@ input, textarea {
   border:#CDD7E2;
 }
 
+/*
+@keyframes animate__pulse {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}*/
+
+
 #enterForm {
   transition: all;
+  width: 100px;
+  display: flex;
+  justify-content: center;
 }
 
 #enterForm:hover {
@@ -306,7 +320,7 @@ input, textarea {
 }
 
 #enterForm:active {
-  border: solid #000000 0.5px;
+  border: solid #3d3b3b 0.5px;
 }
 
 h4 {
