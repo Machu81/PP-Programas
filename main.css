@@ -125,8 +125,8 @@ li {
 .infoBar {
   grid-area: infoBar;
  
-  padding-right: 60px;
-  padding-left: 60px;
+  padding-right: 40px;
+  padding-left: 40px;
   padding-top: 58px;
 }
 
@@ -156,8 +156,8 @@ h1 {
 .principal {
   grid-area: principal;
 
-  margin-right: 60px;
-  margin-left: 60px;
+  margin-right: 40px;
+  margin-left: 40px;
 }
 
 .portada {
@@ -178,18 +178,23 @@ h1 {
 
 .intro-titulo {
 font-size: 35px;
+padding-left: 20px;
 } 
 
 .intro-cuerpo {
   margin-top: 10px;
   font-size: 20px;
+  padding-left: 20px;
 }
 
 button {
   border-radius: 10px;
   background-color:#2f4f4f;
-  padding: 10px 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
   margin-top: 30px;
+  margin-left: 20px;
 }
 
 button a {
@@ -211,8 +216,8 @@ button :hover {
   font-family: Open Sans, sans-serif;
   border-radius: 10px;
   padding: 30px;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 40px;
+  margin-right: 40px;
   margin-bottom: 60px;
   margin-top: 100px;
 }
@@ -532,19 +537,28 @@ input[type=checkbox]{
 
   .texto-institucional {
     display: flex;
-    flex-direction: row;
-    
+    flex-direction: row; 
   }
 
   .foto-institucional {
     width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .parrafo-institucional {
     padding: 0px;
-    font-size: 14px;
-    
+    font-size: 14px;   
+    margin-left: 0;
+    margin-right: 0;
   } 
+
+  #institucional {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
 
   .info-encabezado { 
     margin-top: 20px;
