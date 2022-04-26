@@ -35,7 +35,7 @@ header {
   grid-area: logo; 
 
   padding-top: 1px;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 a {
@@ -178,8 +178,8 @@ li {
 .infoBar {
   grid-area: infoBar;
  
-  padding-right: 60px;
-  padding-left: 60px;
+  padding-right: 35px;
+  padding-left: 35px;
   padding-top: 58px;
 }
 
@@ -209,8 +209,8 @@ h1 {
 .principal {
   grid-area: principal;
 
-  margin-right: 60px;
-  margin-left: 60px;
+  margin-right: 35px;
+  margin-left: 35px;
 }
 
 .portada {
@@ -231,18 +231,23 @@ h1 {
 
 .intro-titulo {
 font-size: 35px;
+padding-left: 20px;
 } 
 
 .intro-cuerpo {
   margin-top: 10px;
   font-size: 20px;
+  padding-left: 20px;
 }
 
 button {
   border-radius: 10px;
   background-color:#2f4f4f;
-  padding: 10px 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
   margin-top: 30px;
+  margin-left: 20px;
 }
 
 button a {
@@ -264,8 +269,8 @@ button :hover {
   font-family: Open Sans, sans-serif;
   border-radius: 10px;
   padding: 30px;
-  margin-left: 60px;
-  margin-right: 60px;
+  margin-left: 35px;
+  margin-right: 35px;
   margin-bottom: 60px;
   margin-top: 100px;
 }
@@ -296,17 +301,6 @@ input, textarea {
   border-radius: 5px;
   border:#CDD7E2;
 }
-
-/*
-@keyframes animate__pulse {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}*/
-
 
 #enterForm {
   transition: all;
@@ -425,15 +419,22 @@ input[type=checkbox]{
 
   .principal {
     grid-area: principal;
-    
-    margin-right: 10px;
-    margin-left: 10px;
+ 
+    padding-left: 0;
+    padding-right: 0;
     }
 
   .infoBar {
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 20px;  
+  }
+
+  #institucional {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 20px;
+    margin-bottom: 5px;
   }
 
   .more-info {
@@ -443,7 +444,7 @@ input[type=checkbox]{
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 20px;
-    margin-top: 40px;
+    margin-top: 10px;
   }  
 
   .menu { 
@@ -499,12 +500,24 @@ input[type=checkbox]{
 
   .parrafo-institucional {
   font-style: italic;
-  padding-left: 20px;
+  padding-left: 0px;
   padding-top: 0px;
-  padding-right: 20px;
+  padding-right: 0px;
+  margin-left: 0px;
   }
 
  }
+
+ .social-bar {
+  position: fixed;
+  right: 0;
+  top: 300px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  z-index: 100;
+}
 
  @media (max-width: 425px) {
 
@@ -614,10 +627,9 @@ input[type=checkbox]{
     margin-right: 0;
   } 
 
-
   #institucional {
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
     margin-top: 20px;
     margin-bottom: 5px;
   }
@@ -646,7 +658,7 @@ input[type=checkbox]{
     grid-area: principal;
     
     margin: 60px;
-      
+   
   }
 
   .foto-institucional {
@@ -659,4 +671,21 @@ input[type=checkbox]{
       margin-left: 0;
       margin-right: 0;
     }
+}
+
+@media screen and (max-width: 320px) {
+  .social-bar {
+    position: fixed;
+    right: 0;
+    top: 320px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    z-index: 100;
+  }
+
+  .texto-institucional {
+    width: 600px;
+  }
 }
